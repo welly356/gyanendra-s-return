@@ -3,69 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gyanendra Shah | For Unity & Tradition</title>
+    <title>Restore the Crown | Nepal 2025</title>
     <style>
-        :root { --crimson: #8C001A; --gold: #D4AF37; --white: #ffffff; }
-        body { font-family: 'Georgia', serif; margin: 0; background-color: #fdfcf0; color: #222; }
-        header { background: var(--crimson); color: var(--gold); padding: 40px; text-align: center; border-bottom: 4px solid var(--gold); }
-        .hero-image { width: 100%; max-height: 400px; background: #333; display: flex; align-items: center; justify-content: center; color: white; }
-        .nav { background: #111; padding: 10px; text-align: center; }
-        .nav a { color: var(--gold); text-decoration: none; margin: 0 15px; font-weight: bold; }
-        .content { max-width: 1000px; margin: auto; padding: 40px; background: white; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: var(--crimson); border-left: 5px solid var(--gold); padding-left: 15px; margin-top: 30px; }
-        .biography-snippet { background: #f9f9f9; padding: 20px; border-radius: 5px; font-style: italic; }
-        .update-banner { background: #fff3cd; border: 1px solid #ffeeba; padding: 15px; margin: 20px 0; border-radius: 5px; }
-        .cta-section { background: var(--crimson); color: white; padding: 40px; text-align: center; margin-top: 40px; }
-        .btn { background: var(--gold); color: #000; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; }
+        :root { --crimson: #8C001A; --gold: #D4AF37; --dark: #1a1a1a; --light: #fdfcf0; }
+        body { font-family: 'Georgia', serif; margin: 0; background-color: var(--light); color: #333; line-height: 1.8; }
+        
+        /* Navigation */
+        nav { background: var(--dark); padding: 15px; position: sticky; top: 0; z-index: 1000; text-align: center; }
+        nav a { color: var(--gold); text-decoration: none; margin: 0 20px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover { border-bottom: 2px solid var(--gold); }
+
+        /* Hero Section */
+        header { background: var(--crimson); color: var(--gold); padding: 80px 20px; text-align: center; border-bottom: 6px solid var(--gold); }
+        header h1 { font-size: 3rem; margin: 0; letter-spacing: 2px; }
+        header p { font-size: 1.2rem; color: white; font-style: italic; }
+
+        /* Main Layout */
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
+        
+        /* Urgent News Banner */
+        .news-flash { background: #fff3cd; border: 2px solid var(--crimson); padding: 20px; margin-bottom: 30px; border-radius: 5px; }
+        .news-flash h3 { margin-top: 0; color: var(--crimson); }
+
+        /* Sections */
+        h2 { color: var(--crimson); border-bottom: 2px solid var(--gold); padding-bottom: 10px; margin-top: 40px; }
+        .bio-box { border-left: 4px solid var(--crimson); padding-left: 20px; margin: 20px 0; background: #f9f9f9; padding: 20px; }
+        
+        /* Support Box */
+        .support-cta { background: var(--dark); color: white; padding: 40px; text-align: center; margin-top: 50px; border-radius: 8px; }
+        .support-cta h2 { color: var(--gold); border: none; }
+        .btn { display: inline-block; background: var(--gold); color: black; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; transition: transform 0.2s; }
+        .btn:hover { transform: scale(1.05); background: #f0e68c; }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; }
+        
+        @media (max-width: 600px) { header h1 { font-size: 2rem; } nav a { display: block; margin: 10px 0; } }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>H.M. Gyanendra Bir Bikram Shah Dev</h1>
-    <p>Symbol of Sovereignty | Guardian of Tradition</p>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#history">History</a>
+    <a href="#2025">2025 Movement</a>
+    <a href="#support">Support</a>
+</nav>
+
+<header id="home">
+    <h1>H.M. GYANENDRA SHAH</h1>
+    <p>Unity, Sovereignty, and the Future of the Nepalese Throne</p>
 </header>
 
-<div class="nav">
-    <a href="#bio">Biography</a>
-    <a href="#vision">The Vision</a>
-    <a href="#2025">2025 Movement</a>
-    <a href="#support">Support Us</a>
-</div>
-
-<div class="content">
-    <div class="update-banner">
-        <strong>LATEST NEWS (2025):</strong> Massive rallies in Kathmandu and Pokhara show the rising public demand for the restoration of the Constitutional Monarchy.
+<div class="container">
+    
+    <div class="news-flash">
+        <h3>2025: The Year of the People's Awakening</h3>
+        <p><strong>Latest:</strong> Following the massive pro-monarchy rallies in Kathmandu on <strong>March 9, 2025</strong>, and the subsequent "Joint People's Movement" launched on March 27, the demand for the restoration of the 1991 Constitutional Monarchy has reached an all-time high. In September 2025, amidst national political unrest, the King called for peace and national healing.</p>
     </div>
 
-    <section id="bio">
-        <h2>Biography</h2>
-        <div class="biography-snippet">
-            <p>Born on 7 July 1947, Gyanendra Bir Bikram Shah Dev served as the King of Nepal during two pivotal eras (1950–1951 and 2001–2008). A keen conservationist and graduate of Tribhuvan University, his reign was defined by his commitment to national stability during times of civil unrest.</p>
+    <section id="history">
+        <h2>Biography and Legacy</h2>
+        <p>Gyanendra Bir Bikram Shah Dev (born 7 July 1947) served as the King of Nepal from 1950 to 1951 and again from 2001 until 2008. As the second son of Crown Prince Mahendra, he was educated at St. Joseph's in Darjeeling and Tribhuvan University.</p>
+        
+        <div class="bio-box">
+            <strong>Guardian of the Environment:</strong> Before his second reign, Gyanendra was a renowned conservationist, serving as chairman of the King Mahendra Trust for Nature Conservation. He remains a symbol of Nepal's natural and cultural preservation.
         </div>
-        <p>After the events of 2008, the King chose a dignified exit to ensure the peace process succeeded. However, as he stated in 2012 and reaffirmed in his 2025 addresses, he remains committed to the welfare of the Nepalese people and the preservation of Nepal's Hindu-Buddhist identity.</p>
+
+        <p>While his reign faced the challenges of the Nepalese Civil War, supporters today view his 2005 attempt to restore order as a necessary measure for national stability. In 2008, he abdicated with dignity to prevent further bloodshed, handing the sovereign crown back to the people—an agreement that many feel has been broken by modern politicians.</p>
     </section>
 
     <section id="2025">
-        <h2>The 2025 Pro-Monarchy Movement</h2>
-        <p>The year 2025 has seen a historic resurgence of support. From the pilgrimage to <strong>Galeshwar Dham</strong> to the massive crowds at <strong>Tribhuvan International Airport</strong> on March 9, the slogan <em>"Raja Aau, Desh Bachau"</em> has become a national call for change.</p>
-    </section>
-
-    <section id="vision">
-        <h2>Why Bring Back the Crown?</h2>
+        <h2>The Restoration Movement</h2>
+        <p>The current federal republic has seen 13 governments in 17 years, leading to economic stagnation and corruption. The people are now looking back to the 240-year rule of the Shah Dynasty for stability.</p>
+        
         <ul>
-            <li><strong>Stability:</strong> A non-partisan head of state to end the cycle of changing governments.</li>
-            <li><strong>Sovereignty:</strong> The Shah dynasty has been the bedrock of Nepal's independence since the 1760s.</li>
-            <li><strong>Cultural Preservation:</strong> Restoring Nepal as a Hindu Kingdom while respecting all faiths.</li>
+            <li><strong>The Democracy Day Address (Feb 19, 2025):</strong> The King noted that "the people are tired of endless instability" and urged unity to save the nation.</li>
+            <li><strong>The Grand Welcome (March 9, 2025):</strong> Over 10,000 supporters (some estimates say up to 400,000) greeted him at Tribhuvan Airport, chanting <em>"Raja Aau, Desh Bachau!"</em></li>
+            <li><strong>The 1991 Vision:</strong> The movement now demands a return to the 1991 Constitution, featuring a Constitutional Monarchy with a multi-party system and the recognition of Nepal as a Hindu nation.</li>
         </ul>
     </section>
+
+    <section id="support" class="support-cta">
+        <h2>Be a Voice for the King</h2>
+        <p>History is being written today. Stand with us as we advocate for a unified, stable, and proud Nepal.</p>
+        <a href="https://discord.gg/mYdWExTQE" class="btn">JOIN THE DISCORD COMMUNITY</a>
+        <p style="margin-top:20px; font-size:0.8rem; color:#aaa;">Connect with thousands of other supporters and stay updated on the 2026 rallies.</p>
+    </section>
+
 </div>
 
-<div class="cta-section" id="support">
-    <h2>Stand With the King</h2>
-    <p>Join the movement for a peaceful, unified, and prosperous Nepal.</p><br>
-    <a href="https://discord.gg/mYdWExTQE" class="btn">Join Our Community on Discord</a>
-</div>
+<footer>
+    <p>© 2025 Nepal Restoration Project | For Unity and Tradition</p>
+</footer>
 
 </body>
 </html>
