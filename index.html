@@ -1,99 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restore the Crown | Nepal 2025</title>
-    <style>
-        :root { --crimson: #8C001A; --gold: #D4AF37; --dark: #1a1a1a; --light: #fdfcf0; }
-        body { font-family: 'Georgia', serif; margin: 0; background-color: var(--light); color: #333; line-height: 1.8; scroll-behavior: smooth; }
-        
+       :root { --crimson: #8C001A; --gold: #D4AF37; --dark: #1a1a1a; --light: #fdfcf0; }
+        body { font-family: 'Georgia', serif; margin: 0; background-color: var(--light); color: #333; line-height: 1.8; }
+
+        /* Navigation */
         nav { background: var(--dark); padding: 15px; position: sticky; top: 0; z-index: 1000; text-align: center; }
-        nav a { color: var(--gold); text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        nav a { color: var(--gold); text-decoration: none; margin: 0 20px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
         nav a:hover { border-bottom: 2px solid var(--gold); }
 
-        header { background: var(--crimson); color: var(--gold); padding: 60px 20px; text-align: center; border-bottom: 6px solid var(--gold); }
-        header img { width: 180px; height: 180px; border-radius: 50%; border: 4px solid var(--gold); object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        header h1 { font-size: 2.5rem; margin: 0; letter-spacing: 2px; }
+        /* Hero Section */
+        header { background: var(--crimson); color: var(--gold); padding: 80px 20px; text-align: center; border-bottom: 6px solid var(--gold); }
+        header h1 { font-size: 3rem; margin: 0; letter-spacing: 2px; }
+        header p { font-size: 1.2rem; color: white; font-style: italic; }
 
-        .container { max-width: 900px; margin: 40px auto; padding: 20px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
-        
-        .news-flash { background: #fff3cd; border: 2px solid var(--crimson); padding: 20px; margin-bottom: 30px; border-radius: 5px; position: relative; }
+        /* Main Layout */
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
+
+        /* Urgent News Banner */
+        .news-flash { background: #fff3cd; border: 2px solid var(--crimson); padding: 20px; margin-bottom: 30px; border-radius: 5px; }
         .news-flash h3 { margin-top: 0; color: var(--crimson); }
 
+        /* Sections */
         h2 { color: var(--crimson); border-bottom: 2px solid var(--gold); padding-bottom: 10px; margin-top: 40px; }
-        .section-img { width: 100%; border-radius: 8px; margin: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .bio-box { border-left: 4px solid var(--crimson); padding-left: 20px; margin: 20px 0; background: #f9f9f9; padding: 20px; }
         
-        .support-cta { background: var(--dark); color: white; padding: 50px 20px; text-align: center; margin-top: 50px; border-radius: 8px; }
-        .btn { display: inline-block; background: var(--gold); color: black; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 50px; transition: 0.3s; }
+        /* Support Box */
+
+        .support-cta { background: var(--dark); color: white; padding: 40px; text-align: center; margin-top: 50px; border-radius: 8px; }
+        .support-cta h2 { color: var(--gold); border: none; }
+        .btn { display: inline-block; background: var(--gold); color: black; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; transition: transform 0.2s; }
         .btn:hover { transform: scale(1.05); background: #f0e68c; }
 
-        footer { text-align: center; padding: 40px; color: #777; font-size: 0.8rem; }
-    </style>
-</head>
-<body>
+        /* Footer */
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; }
 
+        @media (max-width: 600px) { header h1 { font-size: 2rem; } nav a { display: block; margin: 10px 0; } }
+@@ -46,6 +39,9 @@
 <nav>
     <a href="#home">Home</a>
-    <a href="#history">Legacy</a>
-    <a href="#2025">The 2025 Uprising</a>
-    <a href="#vision">The 1991 Vision</a>
-    <a href="#support">Join Us</a>
+    <a href="#history">History</a>
+    <a href="#republic">Republic</a>
+    <a href="#controversies">Controversies</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#2025">2025 Movement</a>
+    <a href="#support">Support</a>
 </nav>
-
-<header id="home">
-    <img src="https://kids.kiddle.co/images/thumb/f/fc/Gyanendra_Shah.jpg/300px-Gyanendra_Shah.jpg" alt="H.M. Gyanendra Shah">
-    <h1>H.M. GYANENDRA SHAH</h1>
-    <p>Guardian of Unity and Cultural Sovereignty</p>
-</header>
-
-<div class="container">
-    <div class="news-flash">
-        <h3>LATEST: December 2025 Update</h3>
-        <p>Following the <strong>September Gen Z Uprising</strong> and the resignation of PM K.P. Sharma Oli, an interim government led by Sushila Karki has been formed. Fresh elections are scheduled for <strong>March 5, 2026</strong>. The demand for the restoration of the Monarchy is the fastest-growing political movement in the country.</p>
+@@ -63,14 +59,40 @@ <h3>2025: The Year of the People's Awakening</h3>
     </div>
 
     <section id="history">
-        <h2>A Legacy of Unity</h2>
-        <p>The Shah dynasty has been the bedrock of Nepal since King Prithvi Narayan Shah's unification in the 18th century. For over 240 years, the Crown was the "Common Garden" for all ethnicities. After the 2001 tragedy, King Gyanendra stepped forward to lead during the height of the Maoist insurgency.</p>
+        <h2>Background of the Nepali Monarchy</h2>
+        <p>The Shah dynasty began in the mid-18th century when King Prithvi Narayan Shah unified Nepal. For 240 years, the monarchy remained the central institution of governance, symbolizing unity and sovereignty.</p>
         
-        
-        <p><em>The Narayanhiti Palace, the historic seat of the Shah Kings, now serves as a museum, but remains a powerful symbol of Nepal's royal identity.</em></p>
+        <h2>Biography and Legacy</h2>
+        <p>Gyanendra Bir Bikram Shah Dev (born 7 July 1947) served as the King of Nepal from 1950 to 1951 and again from 2001 until 2008. As the second son of Crown Prince Mahendra, he was educated at St. Joseph's in Darjeeling and Tribhuvan University.</p>
+
+        <div class="bio-box">
+            <strong>Guardian of the Environment:</strong> Before his second reign, Gyanendra was a renowned conservationist, serving as chairman of the King Mahendra Trust for Nature Conservation. He remains a symbol of Nepal's natural and cultural preservation.
+        </div>
+    </section>
+
+    <section id="republic">
+        <h2>Transition to a Republic</h2>
+        <p>Nepal’s monarchy ended in 2008 after a decade-long Maoist insurgency and mass protests. The 2006 People’s Movement forced King Gyanendra to reinstate parliament, and the Constituent Assembly later declared Nepal a federal democratic republic, abolishing 240 years of monarchy.</p>
+    </section>
+
+        <p>While his reign faced the challenges of the Nepalese Civil War, supporters today view his 2005 attempt to restore order as a necessary measure for national stability. In 2008, he abdicated with dignity to prevent further bloodshed, handing the sovereign crown back to the people—an agreement that many feel has been broken by modern politicians.</p>
+    <section id="controversies">
+        <h2>Controversies Faced by King Gyanendra</h2>
+        <ul>
+            <li><strong>2001 Royal Massacre:</strong> Public suspicion lingered, though no evidence implicated him directly.</li>
+            <li><strong>2005 Coup:</strong> His dismissal of parliament was condemned as authoritarian.</li>
+            <li><strong>2006 Protests:</strong> Security forces suppressed demonstrators, eroding trust in the monarchy.</li>
+        </ul>
+    </section>
+
+    <section id="timeline">
+        <h2>Timeline of Monarchy Restoration Movement</h2>
+        <div class="bio-box">
+            <p><strong>2008:</strong> Nepal declared a republic, ending monarchy.</p>
+            <p><strong>2010s:</strong> Small royalist groups kept the idea alive.</p>
+            <p><strong>2020:</strong> Pro-monarchy rallies gained momentum.</p>
+            <p><strong>2023:</strong> Larger demonstrations in Kathmandu demanded restoration.</p>
+            <p><strong>2025:</strong> Movement intensified, calling for reinstatement under the 1991 Constitution.</p>
+        </div>
     </section>
 
     <section id="2025">
-        <h2>2025: The Year of Awakening</h2>
-        <p>This year saw an unprecedented shift in public sentiment. The failures of the republic—corruption, 14 government changes in 17 years, and the 2025 social media ban—led to a nationwide call for a "Guardian."</p>
-        
-        <ul>
-            <li><strong>March 9, 2025:</strong> Thousands flooded the Kathmandu airport to welcome the King, chanting <em>"Raja Aau, Desh Bachau"</em> (King Come, Save the Nation).</li>
-            <li><strong>March 28, 2025:</strong> The "Joint People's Movement Committee" was formed to consolidate pro-monarchy forces.</li>
-            <li><strong>September 2025:</strong> During the violent Gen Z protests, King Gyanendra’s Dashain message offered a voice of calm, acknowledging past mistakes while calling for a system that reflects the people's true will.</li>
-        </ul>
-
-        
-    </section>
-
-    <section id="vision">
-        <h2>The 1991 Framework</h2>
-        <p>The movement advocates for a return to the 1991 Constitution, which offers:</p>
-        <ul>
-            <li><strong>Constitutional Monarchy:</strong> A stable, non-partisan Head of State.</li>
-            <li><strong>Multi-Party Democracy:</strong> Ensuring the voice of the people is heard.</li>
-            <li><strong>Hindu Kingdom:</strong> Reclaiming Nepal's unique spiritual identity.</li>
-        </ul>
-    </section>
-
+@@ -87,7 +109,6 @@ <h2>The Restoration Movement</h2>
     <section id="support" class="support-cta">
-        <h2>Be a Part of History</h2>
-        <p>Nepal is at a crossroads. Stand with us as we move toward the March 2026 elections.</p>
-        <a href="https://discord.gg/mYdWExTQE" class="btn">JOIN OUR DISCORD COMMUNITY</a>
+        <h2>Be a Voice for the King</h2>
+        <p>History is being written today. Stand with us as we advocate for a unified, stable, and proud Nepal.</p>
+        <a href="https://discord.gg/mYdWExTQE" class="btn">JOIN THE DISCORD COMMUNITY</a>
+        <p style="margin-top:20px; font-size:0.8rem; color:#aaa;">Connect with thousands of other supporters and stay updated on the 2026 rallies.</p>
     </section>
-</div>
 
-<footer>
-    <p>© 2025 Nepal Restoration Project | For National Stability</p>
-</footer>
+@@ -99,3 +120,4 @@ <h2>Be a Voice for the King</h2>
 
 </body>
 </html>
