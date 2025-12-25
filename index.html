@@ -8,12 +8,10 @@
         :root { --crimson: #8C001A; --gold: #D4AF37; --dark: #1a1a1a; --light: #fdfcf0; }
         body { font-family: 'Georgia', serif; margin: 0; background-color: var(--light); color: #333; line-height: 1.8; scroll-behavior: smooth; }
         
-        /* Navigation */
         nav { background: var(--dark); padding: 15px; position: sticky; top: 0; z-index: 1000; text-align: center; }
         nav a { color: var(--gold); text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
         nav a:hover { border-bottom: 2px solid var(--gold); }
 
-        /* Header */
         header { background: var(--crimson); color: var(--gold); padding: 60px 20px; text-align: center; border-bottom: 6px solid var(--gold); }
         header img { width: 200px; height: 200px; border-radius: 50%; border: 5px solid var(--gold); object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
         header h1 { font-size: 2.8rem; margin: 0; letter-spacing: 2px; }
@@ -21,7 +19,6 @@
 
         .container { max-width: 900px; margin: 40px auto; padding: 30px; background: white; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 12px; }
         
-        /* 2025 News Banner */
         .news-flash { background: #fff3cd; border: 2px solid var(--crimson); padding: 25px; margin-bottom: 40px; border-radius: 8px; position: relative; }
         .news-flash::before { content: "DECEMBER 2025 UPDATE"; position: absolute; top: -12px; left: 20px; background: var(--crimson); color: white; padding: 2px 12px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; }
         .news-flash h3 { margin-top: 0; color: var(--crimson); font-size: 1.4rem; }
@@ -29,20 +26,14 @@
         h2 { color: var(--crimson); border-bottom: 2px solid var(--gold); padding-bottom: 10px; margin-top: 45px; font-size: 1.8rem; }
         p { margin-bottom: 20px; text-align: justify; }
 
-        .bio-box { border-left: 5px solid var(--crimson); padding: 20px; margin: 25px 0; background: #fefefe; font-style: italic; border-radius: 0 8px 8px 0; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); }
-
-        /* Support CTA */
-        .support-cta { background: var(--dark); color: white; padding: 60px 20px; text-align: center; margin-top: 60px; border-radius: 12px; border-top: 6px solid var(--gold); }
-        .support-cta h2 { color: var(--gold); border: none; margin-bottom: 20px; font-size: 2.2rem; }
-        .btn { display: inline-block; background: var(--gold); color: black; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 50px; font-size: 1.3rem; transition: 0.3s; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
-        .btn:hover { transform: translateY(-3px); background: #f0e68c; box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5); }
+        .quote-box { border-left: 5px solid var(--crimson); padding: 20px; margin: 25px 0; background: #fefefe; font-style: italic; border-radius: 0 8px 8px 0; }
 
         footer { text-align: center; padding: 50px; color: #666; font-size: 0.9rem; background: #f4f4f4; border-top: 1px solid #ddd; }
         
         ul { padding-left: 20px; }
         li { margin-bottom: 15px; }
 
-        @media (max-width: 600px) { header h1 { font-size: 2rem; } header img { width: 150px; height: 150px; } .container { margin: 20px; padding: 15px; } }
+        @media (max-width: 600px) { header h1 { font-size: 2rem; } .container { margin: 20px; padding: 15px; } }
     </style>
 </head>
 <body>
@@ -50,9 +41,8 @@
 <nav>
     <a href="#home">Home</a>
     <a href="#history">The Shah Legacy</a>
-    <a href="#uprising">2025 Uprising</a>
+    <a href="#uprising">2025 Movement</a>
     <a href="#vision">The 1991 Vision</a>
-    <a href="#support">Join Us</a>
 </nav>
 
 <header id="home">
@@ -65,52 +55,41 @@
     
     <div class="news-flash">
         <h3>2025: The Tipping Point</h3>
-        <p>Following the <strong>September Gen Z Uprising</strong> that led to the resignation of the K.P. Sharma Oli government and the appointment of the Interim Administration under <strong>Sushila Karki</strong>, public support for the Monarchy has surged. With general elections now scheduled for <strong>March 5, 2026</strong>, Nepal stands at its most significant crossroads since 2008.</p>
+        <p>Following the <strong>September Gen Z Uprising</strong> that led to the resignation of the K.P. Sharma Oli government, public support for the Monarchy has reached historic levels. With general elections now scheduled for <strong>March 5, 2026</strong>, the demand for a stable, Constitutional Monarchy is the defining issue of the year.</p>
     </div>
 
     <section id="history">
-        <h2>The Shah Dynasty & The Crown</h2>
-        <p>Rooted in the mid-18th century, the Shah dynasty was established by <strong>King Prithvi Narayan Shah</strong>, the Great Unifier. For over 240 years, the monarchy served as the central symbol of Nepal's unity and cultural identity. His Majesty King Gyanendra, the last reigning monarch, has remained a steadfast figure of dignity since his voluntary abdication in 2008 to prevent civil bloodshed.</p>
+        <h2>A Legacy of Unity</h2>
+        <p>The Shah dynasty has been the bedrock of Nepal since <strong>King Prithvi Narayan Shah</strong> unified the many small kingdoms into a single nation in the 18th century. For 240 years, the Crown was the "Common Garden" of all ethnicities and faiths. Today, His Majesty King Gyanendra remains the living symbol of that sovereign tradition.</p>
         
-        <div class="bio-box">
-            "The 2008 transition was an agreement based on the promise of stability and prosperity. Seventeen years and fourteen governments later, it is clear that those promises were broken by the political elite."
+        <div class="quote-box">
+            "I have no desire other than the happiness and prosperity of my countrymen. My silence was for peace, but the nation's integrity cannot be compromised."
         </div>
     </section>
 
     <section id="uprising">
-        <h2>The 2025 Restoration Movement</h2>
-        <p>2025 has been the year the silence was broken. The movement has transitioned from nostalgia to an organized political force through these key events:</p>
-        
+        <h2>The 2025 Movement</h2>
+        <p>The current movement is driven by a generation that seeks stability over political chaos. Key milestones of 2025 include:</p>
         <ul>
-            <li><strong>February 19, 2025:</strong> The King's Democracy Day address urged unity, stating that "the people are tired of endless instability."</li>
-            <li><strong>March 9, 2025:</strong> Over 10,000 supporters (estimates suggest up to 400,000) staged a <strong>Grand Welcome</strong> at Tribhuvan International Airport, the largest royalist gathering in decades.</li>
-            <li><strong>March 27, 2025:</strong> Formation of the <strong>Joint People’s Movement Committee</strong> to formally advocate for the reinstatement of the 1991 Constitution.</li>
-            <li><strong>September 2025:</strong> Amidst youth-led anti-corruption protests and a government social media ban, the King emerged as a rare voice of calm, validating the grievances of the "Gen Z" protesters against the "Nepo-Kid" political culture.</li>
+            <li><strong>March 9, 2025:</strong> A massive "Grand Welcome" at Kathmandu Airport signaled the return of royalist sentiment to the mainstream.</li>
+            <li><strong>March 27, 2025:</strong> Formation of the Joint People's Movement Committee to advocate for the 1991 Constitution.</li>
+            <li><strong>September 2025:</strong> Youth-led protests against corruption highlighted the failure of the republican experiment, positioning the Monarchy as the necessary "Guardian" of the state.</li>
         </ul>
     </section>
 
     <section id="vision">
-        <h2>The Vision for 2026</h2>
-        <p>We advocate for a return to the <strong>1991 Constitution</strong>, adapted for the modern era. This vision includes:</p>
+        <h2>The 1991 Vision</h2>
+        <p>The movement calls for a restoration based on the <strong>1991 Constitution</strong>, adapted for the modern 21st century:</p>
         <ul>
-            <li><strong>Constitutional Monarchy:</strong> A non-partisan, unifying Head of State to provide stability.</li>
-            <li><strong>Hindu Kingdom:</strong> Reclaiming Nepal’s spiritual identity while ensuring religious freedom for all.</li>
-            <li><strong>Economic Integrity:</strong> An end to the corruption and frequent government changes that have left Nepal’s youth with no choice but to seek work abroad.</li>
+            <li><strong>Constitutional Monarchy:</strong> A non-partisan Head of State to ensure national stability.</li>
+            <li><strong>Hindu Kingdom:</strong> Reclaiming Nepal’s spiritual identity while respecting all religions.</li>
+            <li><strong>Stability:</strong> Ending the cycle of 14 governments in 17 years to focus on economic growth.</li>
         </ul>
     </section>
-
-    <section id="support" class="support-cta">
-        <h2>Raja Aau, Desh Bachau</h2>
-        <p>The elections of March 5, 2026, will determine the fate of our nation. Be part of the restoration.</p>
-        <a href="https://discord.gg/mYdWExTQE" class="btn">JOIN THE DISCORD MOVEMENT</a>
-        <p style="margin-top:25px; font-size:0.85rem; color:#aaa;">"I have no desire other than the happiness and prosperity of my countrymen." — H.M. Gyanendra Shah</p>
-    </section>
-
 </div>
 
 <footer>
-    <p>© 2025 Nepal Restoration Project | For Unity and Tradition</p>
-    <p>Administered by Supporters of the 1991 Constitution | Kathmandu, Nepal</p>
+    <p>© 2025 Nepal Restoration Project | For National Stability and Tradition</p>
 </footer>
 
 </body>
